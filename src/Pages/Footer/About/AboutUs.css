@@ -1,0 +1,248 @@
+/* Reset margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Rajdhani', sans-serif;
+    /* Use your preferred font */
+    color: #333;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    /* Light background for contrast */
+}
+
+/* Hero Container */
+#hero-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-image: url('../../../images/about-us-desktop.webp');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 15px; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#hero-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay */
+    z-index: 1;
+}
+
+#hero-container h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Big Ideas Section */
+#big-ideas-container {
+    padding: 30px;
+    margin-top: 40px;
+    background-color: #fff;
+    /* border-radius: 15px; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+}
+
+.business-ideas-heading {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-left: 5px solid #3498db;
+    /* Stylish border on the left */
+    padding-left: 10px;
+}
+
+.p1-ideas {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+}
+
+.p1-ideas-span {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Small Business Ideas Section */
+.feature-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-box {
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    background-color: #ecf0f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Container Promise */
+#container-promise {
+    margin-top: 40px;
+    text-align: left;
+    background-color: #fff;
+    /* border-radius: 30px; */
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.promise-heading {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.promise-sub-heading {
+    font-weight: bold;
+    color: #3498db;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.promise-p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    line-height: 1.8;
+}
+
+.tag-promise {
+    font-weight: bold;
+    color: #e74c3c;
+    text-transform: uppercase;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    #hero-container {
+        height: 350px;
+    }
+
+    .business-ideas-heading {
+        font-size: 1.75rem;
+    }
+
+    .promise-heading {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-container {
+        height: 300px;
+    }
+
+    .business-ideas-heading {
+        font-size: 1.5rem;
+    }
+
+    .promise-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #hero-container {
+        height: 250px;
+    }
+
+    .business-ideas-heading {
+        font-size: 1.25rem;
+    }
+
+    .p1-ideas {
+        font-size: 0.95rem;
+    }
+
+    .p1-ideas-span {
+        font-size: 1rem;
+    }
+
+    #container-promise {
+        padding: 2rem 1rem;
+    }
+
+    .promise-heading {
+        font-size: 1.3rem;
+    }
+
+    .promise-p {
+        font-size: 1rem;
+    }
+}

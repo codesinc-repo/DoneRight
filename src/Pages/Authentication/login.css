@@ -1,0 +1,168 @@
+/* src/components/LoginPage.css */
+
+.bg_login_img {
+  background-image: url(../../images/bg_login.jpg);
+  width: 100%;
+  height: 188vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  padding-top: 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+@media (max-width: 700px) {
+  .login-container {
+    max-width: 100%;
+  }
+}
+
+.brand-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.brand-logo {
+  height: 150px;
+}
+
+.login-box {
+  /* text-align: center; */
+}
+
+.login-title {
+  font-size: 26px;
+  font-weight: medium;
+}
+
+.login-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+
+}
+
+.social-btn {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 60px;
+  border: 1px solid #dfdfdf;
+  border-radius: 40px;
+  font-weight: 400;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 1.2;
+  position: relative;
+  transition: all .3s ease-in;
+
+  img {
+    width: 20px;
+    position: absolute;
+    left: 15%;
+  }
+
+  &:hover {
+    border-color: #707070;
+    background: transparent;
+  }
+}
+
+.email-login {
+  margin-bottom: 20px;
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.email-login .form-group {
+  margin-bottom: 10px;
+
+  input {
+    min-height: 70px;
+    border: 1.5px solid #707070;
+    font-style: italic;
+    font-weight: 500;
+    outline: none;
+  }
+}
+
+.forgot-password {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.btn-block {
+  width: 100%;
+  min-height: 70px;
+  color: #9e9e9e;
+  background: #dfdfdf;
+  border-color: #dfdfdf;
+  border-radius: 40px;
+  transition: all .3s ease-in;
+  font-weight: 500;
+}
+
+.crt_acnt_btn {
+  background: white;
+}
+
+.create-account {
+  margin-top: 20px;
+}
+
+.create-account p {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.already-account {
+  font-size: 16px !important;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.terms-text {
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .brand-header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .social-btn {
+    img {
+      left: 8%;
+    }
+  }
+}

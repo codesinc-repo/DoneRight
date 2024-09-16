@@ -1,0 +1,216 @@
+.main_section_news {
+    /* General Reset */
+    font-family: 'Rajdhani', sans-serif;
+
+    #hero-container {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 50px;
+        padding-top: 50px;
+
+        background-image: url('../../../images/news-hero.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    #child-container {
+        background-color: white;
+        padding: 40px;
+    }
+
+    #child-container h3 {
+        font-weight: bold;
+    }
+
+    #child-container p {
+        font-weight: 600;
+    }
+
+    /* Aside Bar */
+    .aside-bar {
+        float: right;
+        padding-right: 150px;
+        width: 400px;
+        margin-top: 100px;
+    }
+
+    .aside-bar h4 {
+        font-weight: 700;
+    }
+
+    .aside-bar p {
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .media-p {
+        color: rgba(0, 0, 0, 0.964);
+    }
+
+    .recent-news-p {
+        text-decoration: none;
+        color: #00a7cc;
+    }
+
+    .aside-bar p:hover {
+        text-decoration: underline;
+    }
+
+    /* Main Container */
+    .main {
+       
+        border-left: 1px solid rgba(0, 0, 0, 0.964);
+    }
+
+    .news-head {
+        color: rgba(0, 0, 0, 0.964);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .news-head:hover {
+        color: #00a7cc;
+        text-decoration: underline;
+    }
+
+    .btn-news {
+        background-color: #00a7cc;
+        color: white;
+        font-weight: bold;
+    }
+
+    .blog-p {
+        font-size: 22px;
+
+    }
+
+    i {
+        color: #00a7cc;
+        margin: 5px;
+    }
+
+    .container-below {
+        margin-top: 100px;
+        padding-right: 210px;
+    }
+
+    .col-md-10 {
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+    }
+
+    .col-md-10 img {
+        width: 200px;
+        margin-right: 20px;
+
+
+    }
+
+    .d-flex {
+        padding: 5px;
+    }
+
+    /* Media Queries for Responsiveness */
+
+    /* For tablets */
+    @media (max-width: 768px) {
+        .aside-bar {
+            padding-right: 50px;
+            width: 100%;
+            margin-top: 50px;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            float: none;
+        }
+
+        .main {
+            padding-right: 50px;
+            padding-left: 50px;
+            border-left: none;
+            padding-top: 50px;
+        }
+
+        .container-below {
+            margin-top: 50px;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .blog-p {
+            font-size: 18px;
+        }
+
+        .col-md-10 {
+            padding-right: 15px;
+            padding-left: 15px;
+            border-right: none;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    /* For mobile devices */
+    @media (max-width: 576px) {
+        #hero-container {
+            padding-left: 40px;
+        }
+
+        #child-container {
+            width: 330px;
+        }
+
+        .aside-bar {
+            padding-right: 20px;
+            padding-left: 20px;
+            width: 100%;
+            padding-top: 20px;
+            float: none;
+        }
+
+        .main {
+            padding-right: 20px;
+            padding-left: 20px;
+            border-left: none;
+            padding-top: 20px;
+        }
+
+        .blog-p {
+            font-size: 16px;
+        }
+
+        .news-head {
+            font-size: 24px;
+        }
+
+        .container-below {
+            margin-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .btn-news {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .col-md-10 {
+            padding-right: 10px;
+            padding-left: 10px;
+            border-right: none;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .d-flex {
+            flex-direction: column;
+        }
+    }
+
+}

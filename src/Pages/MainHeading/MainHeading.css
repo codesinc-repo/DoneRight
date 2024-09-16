@@ -1,0 +1,149 @@
+.MainHeading {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        height: 100vh;
+    }
+
+    .sidebar_12 {
+        /* background-color: #fff5e1; */
+        padding: 20px;
+        font-size: 25px;
+        border-right: 1px solid #ddd;
+    }
+
+    .sidebar_12 h4,
+    .sidebar_12 h5 {
+        margin-top: 0;
+    }
+
+    .sidebar_12 ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .sidebar_12 ul li a {
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+
+    }
+
+    .sidebar_12 ul li a:hover {
+        margin-bottom: 10px;
+        text-decoration: underline;
+
+    }
+
+    .imgWithText .row {
+        background-color: #f9f1e7;
+
+        p {
+            font-size: 16px;
+        }
+
+    }
+
+    .main-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .main-content p {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    .button-group {
+        margin-bottom: 40px;
+    }
+
+    .button-group .btn {
+        margin-right: 10px;
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .button-group .btn:nth-child(2) {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+
+    .button-group .btn:nth-child(3) {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+
+    .card-options {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-options h2 {
+        margin-top: 0;
+    }
+
+    .card-examples {
+        margin-top: 20px;
+    }
+
+    .card-examples img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .card {
+        margin: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 5px;
+
+
+        .card-title {
+            font-size: 17px;
+        }
+
+        .card-text {
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .card-body {
+            padding: 6px;
+        }
+    }
+
+
+    /* carsoule start */
+
+    /* carsoule end */
+    .political-campaign {
+        background: #3d5d91;
+    }
+
+    .cards-sample {
+        background: #206767;
+    }
+
+    .card-img-top {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    .card-text-limit {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

@@ -1,0 +1,16 @@
+.swan-tabs-contents>div.swan-tab-selected {
+    display: block !important;
+}
+[role="tabpanel"] {
+    display: none;
+}
+
+/* Active tab panel (visible) */
+[role="tabpanel"].active {
+    display: block !important; /* Or any other display style you prefer */
+}
+
+/* Disabled tab panel (hidden) */
+[role="tabpanel"].disabled {
+    display: none;
+}
