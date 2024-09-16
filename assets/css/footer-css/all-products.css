@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Graphik",sans-serif;
+}
+.heading-container{
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.heading-container h2{
+    
+    font-size: 28px;
+    width: 100%;
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.352);
+    color: rgba(0, 0, 0, 0.838);
+    padding-top: 23px;
+    padding-bottom: 20px;
+    font-weight: 600;
+
+   
+
+}
+.heading-container a{
+    text-decoration: none;
+    
+}
+.heading-container h6{
+    font-size: 24px;
+    color: black;
+}
+.cards-a a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cards-sub{
+    text-decoration: none;
+    font-size: 16px;
+    padding-top: 15px;
+    color: black;
+display: grid;
+
+
+    
+}
+/* catagory container */
+.catagory-container{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.catagory-container a{
+    text-decoration: none;
+}
+.catagory-container h6{
+    margin-top: 30px;
+}
+#sub-id{
+    margin-top: 5px;
+}
+/* t-shirts container */
+.tshorts-container{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+
+}
+
+.small-cloting-a{
+text-decoration: none;
+padding-right: 100px;
+}

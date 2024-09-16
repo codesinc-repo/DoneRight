@@ -1,0 +1,231 @@
+.main_sustainability {
+
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Hero Container */
+    .hero-container {
+        width: 100%;
+        padding-top: 10%;
+        background-image: url(../../../images/sustainbility-hero.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        overflow: hidden;
+        animation: heroFadeIn 1s ease-in-out;
+    }
+
+    .hero-container h1 {
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hero-container p {
+        color: white;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* Second Container */
+    .second-container {
+        width: 100%;
+        background-color: #046240 !important;
+        padding: 35px;
+    }
+
+    .second-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-hero {
+        padding: 15px;
+        display: flex;
+        border-bottom: 1px solid white;
+
+    }
+
+    .second-container h4 {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .second-container p {
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    /* Environment Container */
+    .environment-container h3 {
+        font-size: 22px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .environment-container img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .border-row {
+        border-top: 2px solid rgba(0, 0, 0, 0.265);
+    }
+
+    .environment-container p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .card {
+        height: 500px;
+    }
+
+    /* Supply Container */
+    .supply-container {
+        margin-top: 100px;
+        padding: 5% 10%;
+        width: 100%;
+        background-image: url(../../../images/supply.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        animation: heroFadeIn 1s ease-in-out;
+        text-align: center;
+    }
+
+    .supply-container h4 {
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .supply-container p {
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .supply-container a {
+        font-size: 16px;
+        width: 200px;
+        font-weight: 600;
+        margin: 5px;
+        border-radius: 0;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 992px) {
+        .hero-container h1 {
+            font-size: 48px;
+        }
+
+        .hero-container p {
+            font-size: 18px;
+        }
+
+        .card-hero {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .second-container h4,
+        .second-container p {
+            text-align: center;
+        }
+
+        .environment-container img {
+            height: 200px;
+        }
+
+        .card {
+            height: auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-container h1 {
+            font-size: 36px;
+        }
+
+        .hero-container p {
+            font-size: 16px;
+        }
+
+        .card-hero {
+            margin-bottom: 20px;
+        }
+
+        .environment-container h3 {
+            font-size: 20px;
+        }
+
+        .supply-container h4 {
+            font-size: 26px;
+        }
+
+        .supply-container p {
+            font-size: 16px;
+        }
+
+        .supply-container a {
+            font-size: 14px;
+            width: 180px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-container {
+            padding-top: 20%;
+        }
+
+        .hero-container h1 {
+            font-size: 28px;
+        }
+
+        .hero-container p {
+            font-size: 14px;
+        }
+
+        .second-container {
+            padding: 20px;
+        }
+
+        .second-container h4,
+        .second-container p {
+            font-size: 16px;
+        }
+
+        .environment-container img {
+            height: 150px;
+        }
+
+        .supply-container h4 {
+            font-size: 22px;
+        }
+
+        .supply-container p {
+            font-size: 14px;
+        }
+
+        .supply-container a {
+            font-size: 12px;
+            width: 160px;
+        }
+    }
+
+}

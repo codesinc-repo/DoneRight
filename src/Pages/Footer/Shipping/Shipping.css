@@ -1,0 +1,34 @@
+:root {
+    --background-light: #fff;
+    --foreground-light: #0a0a0a;
+    --background-dark: #0a0a0a;
+    --foreground-dark: #f2f2f2;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--foreground-light);
+}
+
+.card {
+    background-color: var(--background-light);
+    color: var(--foreground-light);
+}
+
+.border-custom {
+    border-color: #e2e8f0;
+}
+
+.dark-mode body {
+    background-color: var(--background-dark);
+    color: var(--foreground-dark);
+}
+
+.dark-mode .card {
+    background-color: var(--background-dark);
+    color: var(--foreground-dark);
+}
+
+.dark-mode .border-custom {
+    border-color: #1e1e1e;
+}
